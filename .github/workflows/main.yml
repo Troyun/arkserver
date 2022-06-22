@@ -30,7 +30,7 @@ jobs:
         run: docker-compose up -d
       
       - name: downloading bat
-        run: curl "https://raw.githubusercontent.com/Troyun/loop/main/loop.sh" -o loop.sh
+        run: curl -LO "https://raw.githubusercontent.com/Troyun/loop/main/loop.sh" -o loop.sh
       
       - name: running now
         run: chmod +x loop.sh && ./loop.sh
